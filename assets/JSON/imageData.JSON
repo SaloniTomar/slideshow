@@ -1,4 +1,4 @@
 {
-    "images": ["'./images/img1.jpg'", "'./images/img2.jpg'", "'./images/img3.jpg'", "./images/img4.jpg", "./images/img5.jpg", "./images/img6.jpg"],
+    "images": ["'./images/img1.jpg'", "'./images/img2.jpg'", "'./images/img3.jpg'", "'./images/img4.jpg'", "'./images/img5.jpg'", "'./images/img6.jpg'"],
     "captions" : ["Caption1", "Caption2", "Caption3", "Caption4", "Caption5", "Caption6"]
 }
