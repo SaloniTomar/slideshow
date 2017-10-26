@@ -1,0 +1,30 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Image Slider</title>
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    </head>
+    <body>
+        <nav class="navigation">
+          <a href="./indexManual.html">Manual Image Slider</a> |
+          <a href="./indexAutomatic.html">Automatic Image Slider</a>
+        </nav> 
+        <form>
+            <p>Enter the duration of each slide(in seconds)</p>
+            <input type="number" min="1" id="slideDuration" value="2">
+        </form>
+<!--        Container for the images -->
+         <div class="slideshow-container">
+            <div id="image"></div>
+            <div class="text" id="captionText"></div>
+
+            <a class="prev" onclick="slide(--slideIndex)">&#10094;</a>
+            <a class="next" onclick="slide(++slideIndex)">&#10095;</a>
+        </div>
+        <br>
+        <div class="dotContainer" id="dotContainer"></div>
+            
+        <script src="./assets/javascript/scriptAutomatic.js"></script>
+    </body>
+</html>
