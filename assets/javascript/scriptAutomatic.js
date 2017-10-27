@@ -45,6 +45,7 @@ function showSlides() {
         slideIndex++;
         setTimeout(showSlides, slideDuration * 1000);
     } else {
+        document.getElementById("heading").innerHTML = "Manual Image Slider";
         return;
     }
 }
@@ -92,17 +93,18 @@ function updateDuration(){
 }
 
 function setAuto() {
+    document.getElementById("heading").innerHTML = "Automatic Image Slider";
     control = "Auto";
     document.getElementById("userInput").style.display = "block";
-    slideIndex++;
     showSlides();
     return;
 }
 
 function setManual() {
+    document.getElementById("heading").innerHTML = "Manual Image Slider";
+    if(control === "Auto"){ slideIndex--;}
     control = "Manual";
      document.getElementById("userInput").style.display = "none";
-    slideIndex--;
     showSlides();
     return;
 }
