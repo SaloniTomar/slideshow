@@ -44,7 +44,13 @@ function showSlides() {
     
     //update the value of the time duration of each slide
     var inputTime = document.getElementById("slideDuration");
+    
+    var previousTime= slideDuration;
     slideDuration = inputTime.value;
+     
+    if(slideDuration=="" || slideDuration<1){
+        slideDuration= previousTime;
+    }
     
     //show slide with current slide index
     slide(slideIndex);
