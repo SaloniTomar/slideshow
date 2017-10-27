@@ -37,14 +37,19 @@ function showSlides() {
      //show slide with current slide index
         slide(slideIndex);
 
-
     //to automatically play the slides
     if (control === "Auto") {
+        //Disable the forward and backward control
+        document.getElementById("next").style.display="none";
+        document.getElementById("prev").style.display="none";
         //Change the image after specified time
         updateDuration();
         slideIndex++;
         setTimeout(showSlides, slideDuration * 1000);
     } else {
+        //Enable the forward and backward control
+        document.getElementById("next").style.display="block";
+        document.getElementById("prev").style.display="block";
         document.getElementById("heading").innerHTML = "Manual Image Slider";
         return;
     }
