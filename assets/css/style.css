@@ -1,12 +1,9 @@
-.navigation{
-    position: relative;
-    align-self: center;
-    margin-bottom: 20px;
-    
-}
 
 form{
     margin-bottom: 20px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 30px;
 }
 
 .slideshow-container{
