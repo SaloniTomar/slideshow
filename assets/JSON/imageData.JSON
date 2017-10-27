@@ -1,28 +1,28 @@
 [
 	{
-		image : "./images/img1.jpg",
-		caption : "Caption 1"
+		"image" : "./images/img1.jpg",
+		"caption" : "Caption 1"
 	},
 
     {
-		image : "./images/img2.jpg",
-		caption : "Caption 2"
+		"image" : "./images/img2.jpg",
+		"caption" : "Caption 2"
 	},
     {
-		image : "./images/img3.jpg",
-		caption : "Caption 3"
+		"image" : "./images/img3.jpg",
+		"caption" : "Caption 3"
 	},
     {
-		image : "./images/img4.jpg",
-		caption : "Caption 4"
+		"image" : "./images/img4.jpg",
+		"caption" : "Caption 4"
 	},
     {
-		image : "./images/img5.jpg",
-		caption : "Caption 5"
+		"image" : "./images/img5.jpg",
+		"caption" : "Caption 5"
 	},
     {
-		image : "./images/img6.jpg",
-		caption : "Caption 6"
+		"image" : "./images/img6.jpg",
+		"caption" : "Caption 6"
 	}
 ]
 
