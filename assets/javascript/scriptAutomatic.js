@@ -93,6 +93,7 @@ function updateDuration(){
 }
 
 function setAuto() {
+    if(control === "Auto"){ return;}
     document.getElementById("heading").innerHTML = "Automatic Image Slider";
     control = "Auto";
     document.getElementById("userInput").style.display = "block";
