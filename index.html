@@ -1,32 +1,42 @@
 <!Doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Image Slider</title>
-        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    </head>
-    <body onload="showSlides()">
-       
-        <form>
-            <p>Enter the duration of each slide(in seconds)</p>
-<!--            Input the slide duration     -->
-            <input type="number" min="1" id="slideDuration" value="2"><br>
-<!--            Check the play and pause control  -->
-            <input type="radio" id="play" name="control" value="play" onchange="showSlides()" checked>&#x25b6
-            <input type="radio" id="pause" name="control" value="pause">&#x2016
-        </form>
-        
-<!--        Container for the images -->
-         <div class="slideshow-container">
-            <div id="image"></div>
-            <div class="text" id="captionText"></div>
 
-            <a class="prev" onclick="slide(--slideIndex)">&#10094;</a>
-            <a class="next" onclick="slide(++slideIndex)">&#10095;</a>
+<head>
+    <meta charset="utf-8">
+    <title>Image Slider</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body onload="showSlides()">
+
+    <div class="dropdown">
+        <button class="dropbtn">Slider Control</button>
+        <div class="dropdown-content">
+            <a onclick="setManual()">Manual</a>
+            <a onclick="setAuto()">Automatic</a>
         </div>
-        <br>
-        <div class="dotContainer" id="dotContainer"></div>
-            
-        <script src="./assets/javascript/scriptAutomatic.js"></script>
-    </body>
+    </div>
+
+    <!--        Container for the images -->
+    <div class="slideshow-container">
+        <div id="image"></div>
+        <div class="text" id="captionText"></div>
+
+        <a class="prev" onclick="slide(--slideIndex)">&#10094;</a>
+        <a class="next" onclick="slide(++slideIndex)">&#10095;</a>
+    </div>
+    <br>
+    <div class="dotContainer" id="dotContainer"></div>
+    
+    
+    <form id="userInput">
+        <p>Enter the duration of each slide(in seconds)</p>
+        <!--            Input the slide duration     -->
+        <input type="number" min="1" id="slideDuration" value="2" onchange="updateDuration">
+    </form>
+
+
+    <script src="./assets/javascript/scriptAutomatic.js"></script>
+</body>
+
 </html>
