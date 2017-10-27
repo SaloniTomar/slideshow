@@ -1,5 +1,4 @@
-{
-	[
+[
 	{
 		image : "./images/img1.jpg",
 		caption : "Caption 1"
@@ -26,5 +25,5 @@
 		caption : "Caption 6"
 	}
 ]
-}
+
 
